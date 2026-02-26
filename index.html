@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Containerized Web Application - Docker Deployment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .highlight {
+            color: #00c6ff;
+            font-weight: bold;
+        }
+
+        .icons-container {
+            display: flex;
+            gap: 80px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .icon-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.4s ease;
+            width: 200px;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+        }
+
+        .icon-card img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00c6ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Containerized Web Application</h1>
+    <h2>Deployment with <span class="highlight">Docker & Nginx</span></h2>
+
+    <div class="icons-container">
+        <div class="icon-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Web">
+            <p>Web Application</p>
+        </div>
+
+        <div class="icon-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Code">
+            <p>Application Code</p>
+        </div>
+
+        <div class="icon-card">
+            <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+            <p>Docker Container</p>
+        </div>
+    </div>
+
+    <button onclick="showMessage()">Check Deployment Status</button>
+
+    <div class="footer">
+        Running inside Nginx Docker Container 🚀
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("✅ Your Dockerized Nginx Web Application is Running Successfully!");
+        }
+    </script>
+
+</body>
+</html>
