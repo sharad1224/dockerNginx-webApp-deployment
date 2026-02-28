@@ -65,9 +65,14 @@ port 8080 of your system to port 80 inside the container
 
 # 🌐 Step 4: Access the Application
 
+
+Access in CLI terminal
+```bash
+curl localhost:8080
+```
 Open your browser and go to:
 ```bash
-http://localhost:8080
+http://localhost:8080            
 ```
 
 ------------------------------------------------------------------------
