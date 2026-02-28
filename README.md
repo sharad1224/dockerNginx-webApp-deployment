@@ -31,33 +31,33 @@ Before starting, make sure the following tools are installed:
 -   Docker
 
 Check Docker installation:
-
+```bash
 docker --version
+```
 
 ------------------------------------------------------------------------
 
 # 📥 Step 1: Clone the Repository
-
-git clone
-https://github.com/sharad1224/dockerNginx-webApp-deployment.git
-
+```bash
+git clone https://github.com/sharad1224/dockerNginx-webApp-deployment.git
 cd dockerNginx-webApp-deployment
+```
 
 ------------------------------------------------------------------------
 
 # 🐳 Step 2: Build Docker Image
-
+```bash
 docker build -t docker-nginx-web-app .
-
+```
 Explanation: - `-t` assigns a name to the image - `.` means Docker will
 use the current directory as build context
 
 ------------------------------------------------------------------------
 
 # ▶️ Step 3: Run the Docker Container
-
+```bash
 docker run -d -p 8080:80 docker-nginx-web-app
-
+```
 Explanation: - `-d` runs the container in background - `-p 8080:80` maps
 port 8080 of your system to port 80 inside the container
 
@@ -66,14 +66,16 @@ port 8080 of your system to port 80 inside the container
 # 🌐 Step 4: Access the Application
 
 Open your browser and go to:
-
+```bash
 http://localhost:8080
+```
 
 ------------------------------------------------------------------------
 
 # 📋 Check Running Containers
-
+```bash
 docker ps
+```
 
 ------------------------------------------------------------------------
 
